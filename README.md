@@ -1,31 +1,66 @@
-# 🎵 YouTube Music Automation Downloader (GUI)
+<div align="center">
 
-A modern, fast, and lightweight Python desktop application built with `CustomTkinter` and `yt-dlp` to bulk-download YouTube channels or playlists into high-quality **MP3 320kbps** with automated ID3 metadata and thumbnail embedding.
+  # ⚡ XEANZO MUSIC AUTOMATION DOWNLOADER
 
-Developed by **Gigih Jean Fariellana** ([@xeanzo](https://github.com/xeanzo)).
+  <p align="center">
+    <b>A Modern, Ultra-Fast, Bulk YouTube Audio Extraction & High-Fidelity MP3 Converter Desktop Application</b>
+  </p>
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue?style=for-the-badge)
-![yt-dlp](https://img.shields.io/badge/Engine-yt--dlp-red?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+  <!-- BADGES SECTION -->
+  <p align="center">
+    <a href="https://github.com/xeanzo/Youtube-Music-Downloader">
+      <img src="https://img.shields.io/badge/Python-3.10+-8B5CF6?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    </a>
+    <a href="https://github.com/xeanzo/Youtube-Music-Downloader">
+      <img src="https://img.shields.io/badge/GUI-CustomTkinter-06B6D4?style=for-the-badge&logo=react&logoColor=white" alt="CustomTkinter">
+    </a>
+    <a href="https://github.com/xeanzo/Youtube-Music-Downloader">
+      <img src="https://img.shields.io/badge/Engine-yt--dlp-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="yt-dlp">
+    </a>
+    <a href="https://github.com/xeanzo/Youtube-Music-Downloader">
+      <img src="https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge" alt="License">
+    </a>
+  </p>
+
+  <br>
+
+  <!-- APP PREVIEW SCREENSHOT -->
+  <a href="https://github.com/xeanzo/Youtube-Music-Downloader">
+    <img src="preview.png" alt="Xeanzo Music Downloader Preview" width="700" style="border-radius: 14px;">
+  </a>
+
+  <br>
+  <sub><i>UI Preview — Dark Obsidian Aesthetics with Poppins Typography & Electric Violet Theme</i></sub>
+
+</div>
 
 ---
 
-## ✨ Key Features
+## 🌟 Overview
 
-- **Modern Dark-Mode GUI:** Clean and responsive desktop user interface built using `CustomTkinter`.
-- **High-Fidelity Audio Conversion:** Automatic extraction and conversion to **MP3 320kbps** complete with full ID3 metadata.
-- **Smart URL Normalization:** Automatically handles channel URL variations (e.g., appends `/videos` tab) to prevent channel extraction failures.
-- **Anti-Duplicate History Logging:** Smart tracker (`downloaded_history.txt`) prevents re-downloading previously fetched tracks during incremental updates.
-- **Flexible Sorting:** Option to sequence downloads starting from the **Newest** or **Oldest** upload.
-- **Emergency WebM -> MP3 Batch Converter:** Built-in multithreaded FFmpeg wrapper to convert offline `.webm` files directly into `.mp3` without extra bandwidth consumption.
-- **Real-Time Progress & Console Logs:** Live visual progress bar paired with log console output.
+**Xeanzo YouTube Music Automation Downloader** is a lightweight, cross-platform desktop application designed to solve the hassle of manually downloading audio and remix tracks from YouTube. Powered by **yt-dlp** and wrapped in a sleek **CustomTkinter (Gen-Z Dark Aesthetics)** interface, it allows users to bulk-extract complete channels or playlists directly into crystal-clear **MP3 320kbps** with full metadata tagging.
+
+---
+
+## ✨ Key Features & Highlights
+
+| Feature | Description |
+| :--- | :--- |
+| **🎨 Gen-Z Dark Aesthetics** | Modern Glassmorphism card UI built with `CustomTkinter` featuring Poppins typography & status badges. |
+| **🔊 High-Fidelity MP3 Extraction** | Automatically converts YouTube streams to **320 kbps MP3** with embedded ID3 tags and album cover art. |
+| **🔗 Smart URL Normalization** | Auto-corrects channel links (appending `/videos`) to prevent extraction failures. |
+| **🛡️ Anti-Duplicate History Logger** | Maintains an internal registry (`downloaded_history.txt`) to skip previously fetched tracks during updates. |
+| **🔄 Batch Offline Converter** | Built-in multithreaded FFmpeg wrapper to convert local `.webm` files to `.mp3` without bandwidth cost. |
+| **⚡ Multi-Bitrate Selector** | Choose between 320 kbps (High Quality), 192 kbps (Standard), or 128 kbps (Compact). |
+| **⏳ Sequence Order Options** | Flexible sorting to process downloads starting from either the **Newest** or **Oldest** upload. |
 
 ---
 
 ## 🛠️ Prerequisites
 
-1. **Python 3.10+**
-2. **FFmpeg** (Required for audio post-processing & MP3 conversion)
+Before running the application, ensure you have the following installed on your system:
+
+1. **Python 3.10 or higher**
+2. **FFmpeg** (Required for audio post-processing & MP3 encoding)
    ```powershell
    winget install FFmpeg
