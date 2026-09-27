@@ -64,3 +64,37 @@ Before running the application, ensure you have the following installed on your 
 2. **FFmpeg** (Required for audio post-processing & MP3 encoding)
    ```powershell
    winget install FFmpeg
+
+
+🚀 Quick Setup & Installation
+1. Clone the Repository
+Bash
+git clone [https://github.com/xeanzo/Youtube-Music-Downloader.git](https://github.com/xeanzo/Youtube-Music-Downloader.git)
+cd Youtube-Music-Downloader
+2. Install Python Dependencies
+Bash
+pip install customtkinter yt-dlp
+3. Launch the Application
+Method A (One-Click Launcher for Windows):
+Double-click run.bat (runs silently in background without CMD window).
+
+Method B (Terminal Execution):
+
+Bash
+python app_gui.py
+📂 Project Architecture
+Plaintext
+Youtube-Music-Downloader/
+├── app_gui.py             # Main Desktop GUI Source Code
+├── run.bat                # Windows Background Launcher Script
+├── preview.png            # Application Screenshot Preview
+├── .gitignore             # Git Ignore Rules
+├── Downloads/             # Default Output Directory for Audio Files
+│   └── downloaded_history.txt  # Anti-Duplicate Record File
+└── README.md              # Project Documentation
+👤 Author & Branding
+Gigih Jean Fariellana (Xeanzo)
+
+🐙 GitHub: @xeanzo
+
+⚙️ CAD & Digital Manufacturing: Yanz3D Portfolio
