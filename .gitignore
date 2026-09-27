@@ -1,0 +1,9 @@
+# Abaikan folder Downloads & file media lokal
+Downloads/
+*.mp3
+*.webm
+downloaded_history.txt
+
+# Abaikan file temporary Python
+__pycache__/
+*.pyc
